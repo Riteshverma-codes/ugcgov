@@ -31,115 +31,143 @@ export default function PartnerSection() {
                 </div>
             </div>
 
-            <div className="bg-[#e3def7] py-20">
+            <div className="bg-gray-100 py-20">
                 <div className="max-w-7xl mx-auto flex justify-center gap-10">
 
-                    <div className="relative bg-white w-380px rounded-3xl shadow-lg overflow-hidden">
+                    {/* Item1 */}
 
+                    <div className="relative bg-white w-[400] rounded-3xl shadow-lg overflow-hidden">
+                        {/* Header */}
                         <div className="bg-[#232c3b] h-20"></div>
                         <div className="absolute top-0 left-1/2 -translate-x-1/2
-                      bg-orange-500 text-white px-8 py-2
-                      rounded-b-2xl font-semibold text-lg shadow">
+                        bg-orange-500 text-white px-8 py-2 rounded-b-2xl font-semibold text-lg shadow">
                             Notices
                         </div>
 
                         {/* Content */}
-                        <div className="px-6 pt-12 pb-24 text-sm text-gray-700 space-y-4">
-                            <div className="border-b pb-3">
-                                <p className="font-medium">
-                                    Hon'ble Prime Minister’s Address during VBTD 2026 on 12th January 2026 – Instructions for Compliance.
-                                </p>
-                                <p className="text-xs text-gray-500 mt-1">📅 Published on : 09/01/2026</p>
-                            </div>
+                        <div className="relative h-[230] overflow-hidden px-4">
+                            <div className="vertical-marquee text-sm text-gray-700 space-y-4">
 
-                            <div className="border-b pb-3">
-                                <p className="font-medium">
-                                    UGC letter regarding: New Delhi World Book Fair 2026.
-                                </p>
-                                <p className="text-xs text-gray-500 mt-1">📅 Published on : 05/01/2026</p>
+                                <div className="border-b pb-3">
+                                    <p className="font-medium">
+                                        Hon'ble Prime Minister’s Address during VBTD 2026 on
+                                        12th January 2026 – Instructions for Compliance.
+                                    </p>
+                                    <p className="text-xs text-gray-500 mt-1">
+                                        📅 Published on : 09/01/2026
+                                    </p>
+                                </div>
+
+                                <div className="border-b pb-3">
+                                    <p className="font-medium">
+                                        UGC letter regarding: New Delhi World Book Fair 2026.
+                                    </p>
+                                    <p className="text-xs text-gray-500 mt-1">
+                                        📅 Published on : 05/01/2026
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
 
-
-                        <div className="absolute bottom-6 w-full px-6">
+                        {/* Button */}
+                        <div className="bg-white h-20"></div>
+                        <div className="absolute bottom-6 w-full px-6 bg-white">
                             <button className="w-full border border-gray-400 rounded-full py-3
-                           text-sm font-medium hover:bg-gray-100 transition">
+          text-sm font-medium hover:bg-gray-100 transition">
                                 Read More
                             </button>
                         </div>
 
                     </div>
-                    <div className="relative bg-white w-380px rounded-3xl shadow-lg overflow-hidden">
 
+                    {/* Item 2 */}
 
+                    <div className="relative bg-white w-[400] rounded-3xl shadow-lg overflow-hidden">
+                        {/* Header */}
                         <div className="bg-[#232c3b] h-20"></div>
-
-
                         <div className="absolute top-0 left-1/2 -translate-x-1/2
-                      bg-[#1f7dda] text-white px-8 py-2
-                      rounded-b-2xl font-semibold text-lg shadow">
-                            Circular
+                        bg-[#1f7dda] text-white px-8 py-2 rounded-b-2xl font-semibold text-lg shadow">
+                            Circulars
                         </div>
 
+                        {/* Content */}
+                        <div className="relative h-[230] overflow-hidden px-4">
+                            <div className="vertical-marquee text-sm text-gray-700 space-y-4">
 
-                        <div className="px-6 pt-12 pb-24 text-sm text-gray-700 space-y-4">
-                            <div className="border-b pb-3">
-                                <p className="font-medium">
-                                    Hon'ble Prime Minister’s Address during VBTD 2026 on 12th January 2026 – Instructions for Compliance.
-                                </p>
-                                <p className="text-xs text-gray-500 mt-1">📅 Published on : 09/01/2026</p>
-                            </div>
+                                <div className="border-b pb-3">
+                                    <p className="font-medium">
+                                        Hon'ble Prime Minister’s Address during VBTD 2026 on
+                                        12th January 2026 – Instructions for Compliance.
+                                    </p>
+                                    <p className="text-xs text-gray-500 mt-1">
+                                        📅 Published on : 09/01/2026
+                                    </p>
+                                </div>
 
-                            <div className="border-b pb-3">
-                                <p className="font-medium">
-                                    UGC letter regarding: New Delhi World Book Fair 2026.
-                                </p>
-                                <p className="text-xs text-gray-500 mt-1">📅 Published on : 05/01/2026</p>
+                                <div className="border-b pb-3">
+                                    <p className="font-medium">
+                                        UGC letter regarding: New Delhi World Book Fair 2026.
+                                    </p>
+                                    <p className="text-xs text-gray-500 mt-1">
+                                        📅 Published on : 05/01/2026
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
 
-
-                        <div className="absolute bottom-6 w-full px-6">
+                        {/* Button */}
+                        <div className="bg-white h-20"></div>
+                        <div className="absolute bottom-6 w-full px-6 bg-white">
                             <button className="w-full border border-gray-400 rounded-full py-3
-                           text-sm font-medium hover:bg-gray-100 transition">
+          text-sm font-medium hover:bg-gray-100 transition">
                                 Read More
                             </button>
                         </div>
 
                     </div>
-                    <div className="relative bg-white w-380px rounded-3xl shadow-lg overflow-hidden">
 
-
+                    {/* Item 3 */}
+                    <div className="relative bg-white w-[400] rounded-3xl shadow-lg overflow-hidden">
+                        {/* Header */}
                         <div className="bg-[#232c3b] h-20"></div>
-
-
                         <div className="absolute top-0 left-1/2 -translate-x-1/2
-                      bg-[#407f46] text-white px-8 py-2
-                      rounded-b-2xl font-semibold text-lg shadow whitespace-nowrap">
+                        bg-[#407f46] text-white px-8 py-2 rounded-b-2xl font-semibold text-lg shadow whitespace-nowrap">
                             International Cooperation
                         </div>
 
+                        {/* Content */}
+                        <div className="relative h-[230] overflow-hidden px-4">
+                            <div className="vertical-marquee text-sm text-gray-700 space-y-4">
 
-                        <div className="px-6 pt-12 pb-24 text-sm text-gray-700 space-y-4">
-                            <div className="border-b pb-3">
-                                <p className="font-medium">
-                                    Hon'ble Prime Minister’s Address during VBTD 2026 on 12th January 2026 – Instructions for Compliance.
-                                </p>
-                                <p className="text-xs text-gray-500 mt-1">📅 Published on : 09/01/2026</p>
-                            </div>
+                                <div className="border-b pb-3">
+                                    <p className="font-medium">
+                                        Hon'ble Prime Minister’s Address during VBTD 2026 on
+                                        12th January 2026 – Instructions for Compliance.
+                                    </p>
+                                    <p className="text-xs text-gray-500 mt-1">
+                                        📅 Published on : 09/01/2026
+                                    </p>
+                                </div>
 
-                            <div className="border-b pb-3">
-                                <p className="font-medium">
-                                    UGC letter regarding: New Delhi World Book Fair 2026.
-                                </p>
-                                <p className="text-xs text-gray-500 mt-1">📅 Published on : 05/01/2026</p>
+                                <div className="border-b pb-3">
+                                    <p className="font-medium">
+                                        UGC letter regarding: New Delhi World Book Fair 2026.
+                                    </p>
+                                    <p className="text-xs text-gray-500 mt-1">
+                                        📅 Published on : 05/01/2026
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
 
-
-                        <div className="absolute bottom-6 w-full px-6">
+                        {/* Button */}
+                        <div className="bg-white h-20"></div>
+                        <div className="absolute bottom-6 w-full px-6 bg-white">
                             <button className="w-full border border-gray-400 rounded-full py-3
-                           text-sm font-medium hover:bg-gray-100 transition">
+          text-sm font-medium hover:bg-gray-100 transition">
                                 Read More
                             </button>
                         </div>
@@ -149,6 +177,84 @@ export default function PartnerSection() {
                 </div>
             </div>
 
-        </div>
+
+        </div >
     )
 }
+
+// {/* <div className="relative bg-white w-380px rounded-3xl shadow-lg overflow-hidden">
+
+
+//     <div className="bg-[#232c3b] h-20"></div>
+
+
+//     <div className="absolute top-0 left-1/2 -translate-x-1/2
+//     bg-[#1f7dda] text-white px-8 py-2
+//     rounded-b-2xl font-semibold text-lg shadow">
+//         Circular
+//     </div>
+
+
+//     <div className="px-6 pt-12 pb-24 text-sm text-gray-700 space-y-4">
+//         <div className="border-b pb-3">
+//             <p className="font-medium">
+//                 Hon'ble Prime Minister’s Address during VBTD 2026 on 12th January 2026 – Instructions for Compliance.
+//             </p>
+//             <p className="text-xs text-gray-500 mt-1">📅 Published on : 09/01/2026</p>
+//         </div>
+
+//         <div className="border-b pb-3">
+//             <p className="font-medium">
+//                 UGC letter regarding: New Delhi World Book Fair 2026.
+//             </p>
+//             <p className="text-xs text-gray-500 mt-1">📅 Published on : 05/01/2026</p>
+//         </div>
+//     </div>
+
+
+//     <div className="absolute bottom-6 w-full px-6">
+//         <button className="w-full border border-gray-400 rounded-full py-3
+//         text-sm font-medium hover:bg-gray-100 transition">
+//             Read More
+//         </button>
+//     </div>
+
+// </div>
+// <div className="relative bg-white w-380px rounded-3xl shadow-lg overflow-hidden">
+
+
+//     <div className="bg-[#232c3b] h-20"></div>
+
+
+//     <div className="absolute top-0 left-1/2 -translate-x-1/2
+//     bg-[#407f46] text-white px-8 py-2
+//     rounded-b-2xl font-semibold text-lg shadow whitespace-nowrap">
+//         International Cooperation
+//     </div>
+
+
+//     <div className="px-6 pt-12 pb-24 text-sm text-gray-700 space-y-4">
+//         <div className="border-b pb-3">
+//             <p className="font-medium">
+//                 Hon'ble Prime Minister’s Address during VBTD 2026 on 12th January 2026 – Instructions for Compliance.
+//             </p>
+//             <p className="text-xs text-gray-500 mt-1">📅 Published on : 09/01/2026</p>
+//         </div>
+
+//         <div className="border-b pb-3">
+//             <p className="font-medium">
+//                 UGC letter regarding: New Delhi World Book Fair 2026.
+//             </p>
+//             <p className="text-xs text-gray-500 mt-1">📅 Published on : 05/01/2026</p>
+//         </div>
+//     </div>
+
+
+//     <div className="absolute bottom-6 w-full px-6">
+//         <button className="w-full border border-gray-400 rounded-full py-3
+//         text-sm font-medium hover:bg-gray-100 transition">
+//             Read More
+//         </button>
+//     </div>
+
+// </div> */}

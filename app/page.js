@@ -5,6 +5,7 @@ import Slider from "./Slider/page";
 import Section1 from "./Section1/page";
 import TabSection from "./TabsSection/page";
 import PartnerSection from "./PartnerSection/page";
+import CreativeTables from "./CreativeTables/page";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
     <Section1/>
     <TabSection/>
     <PartnerSection/>
+    <CreativeTables/>
    </>
   );
 }
