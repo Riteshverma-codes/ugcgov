@@ -6,6 +6,7 @@ import Section1 from "./Section1/page";
 import TabSection from "./TabsSection/page";
 import PartnerSection from "./PartnerSection/page";
 import CreativeTables from "./CreativeTables/page";
+import Footer from "./Footer/page";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
     <TabSection/>
     <PartnerSection/>
     <CreativeTables/>
+    <Footer/>
    </>
   );
 }

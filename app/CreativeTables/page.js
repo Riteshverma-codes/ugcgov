@@ -19,9 +19,9 @@ export default function CreativeTables() {
                     <div className="px-6 py-6 space-y-6">
 
                         {/* Anti Ragging Section */}
-                        <div className="flex items-center gap-4 border-b pb-4">
+                        <div className="flex items-center gap-4 border-b pb-4 ">
                             <img
-                                src="/images/anti-ragging.png"
+                                src="/anti-raging.png"
                                 alt="Anti Ragging"
                                 className="h-14 w-14 object-contain"
                             />
@@ -35,13 +35,10 @@ export default function CreativeTables() {
                         {/* Samadhaan Section */}
                         <div className="flex items-center justify-between">
                             <img
-                                src="/images/samadhaan.png"
+                                src="/logos/E-samadhan_Logo_New.png"
                                 alt="Samadhaan"
-                                className="h-20 object-contain"
+                                className="w-50 mx-auto"
                             />
-                            <span className="text-blue-700 font-bold border px-3 py-1 rounded">
-                                UGC
-                            </span>
                         </div>
 
                         {/* Footer Text */}
@@ -67,7 +64,7 @@ export default function CreativeTables() {
                         <div className="relative h-[150] overflow-hidden px-4">
                             <div className="vertical-marquee text-sm text-gray-700 space-y-4">
 
-                                <ul className="text-base font-medium pb-3">
+                                <ul className="text-base font-medium pb-3 roman">
                                     <li>UGC Office Helpline:011-23604446,011-23604200</li>
                                     <li>Covid -19 Helpline:1800-111-657</li>
                                     <li>Email: covid19help.ugc@gov.in</li>
@@ -87,8 +84,6 @@ export default function CreativeTables() {
 
 
                 <div className="relative bg-white w-[400] rounded-3xl shadow-lg overflow-hidden border-orange-500 border-b-7 border-r-7">
-
-
                     {/* Header */}
                     <div className="px-6 pt-6">
                         <h3 className="text-lg font-bold text-gray-800">

@@ -18,6 +18,6 @@
   animation-play-state: paused;
 }
 
-li{
+.roman{
   list-style: decimal;
 }
