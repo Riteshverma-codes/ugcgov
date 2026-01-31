@@ -4,7 +4,7 @@ import React from "react";
 export default function TopHeader() {
     return (
         <>
-            <div className="bg-[#3d344b] py-1">
+            <div className="bg-[#3d344b] py-1 px-5">
                 <div className="flex flex-wrap items-center justify-center text-white gap-5">
                     <Link href="/" className="text-[#ff6c3a]">Home</Link>
                     <Link href="/">Skip to main content</Link>

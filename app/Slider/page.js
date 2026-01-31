@@ -16,48 +16,37 @@ function SimpleSlider() {
         slidesToScroll: 1,
         slidesToShow: 1,
         autoplay: true,
-        speed: 100,
-        autoplayspeed: 100,
-        cssEase: "linear",
+        speed: 800,
+        autoplayspeed: 2000,
+        cssEase: "ease-in-out",
         appendDots: dots => (
             <div
                 style={{
                     width: "150px",
                     borderRadius: "10px",
-                    padding: "10px",
+                    padding: "20px",
                     right: "10px",
                     bottom: "10px",
                 }}
             >
-                <ul style={{ margin: "0px" }}> {dots} </ul>
+                <ul style={{ margin: "0px" }}>
+                    {dots}
+                </ul>
             </div>
         ),
-        // customPaging: i => (
-        //     <div
-        //         style={{
-                    // width: "10px",
-                    // height: "10px",
-                    // borderRadius: "100px",
-                    // color: "blue",
-                    // background: "gray",
-                    // border: "1px gray solid"
-        //         }}
-        //     >
-        //     </div>
-        // )
     };
     return (
         <div className="slider-container relative w-full ">
             <Slider {...settings} className='relative w-full overflow-x-hidden '>
-                    <div>
-                        <Image src={slider2} alt='Slider 1' className='object-cover'></Image>
-                    </div>
-                    <div>
-                        <Image src={slider3} alt='Slider 2 '></Image>
-                    </div>
-                    <div>
-                        <Image src={slider2} alt='Slider 1 '></Image>
-                    </div>
+                <div>
+                    <Image src={slider2} alt='Slider 1' className='object-cover'></Image>
+                </div>
+                <div>
+                    <Image src={slider3} alt='Slider 2 '></Image>
+                </div>
+                <div>
+                    <Image src={slider2} alt='Slider 1 '></Image>
+                </div>
             </Slider>
         </div>
     );

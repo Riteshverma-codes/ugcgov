@@ -9,7 +9,7 @@ import Marquee from "react-fast-marquee";
 export default function PartnerSection() {
     return (
         <div className=''>
-            <div className='max-w-310 mx-auto rounded-4xl'>
+            <div className='max-w-310 mx-auto rounded-4xl px-5'>
                 <div className='flex flex-center flex-col'>
                     <h1 className='text-4xl text-center mt-10 font-bold text-[#ff6c3a]'>Star Performer<span className='text-[#3f495a]'> of the Month</span></h1>
                     <div className='flex flex-wrap items-center justify-center mt-10 gap-10'>
@@ -31,12 +31,12 @@ export default function PartnerSection() {
                 </div>
             </div>
 
-            <div className="bg-gray-100 py-20">
-                <div className="max-w-7xl mx-auto flex justify-center gap-10">
+            <div className="bg-gray-100 py-20 px-5">
+                <div className="max-w-7xl mx-auto flex justify-center flex-wrap gap-10">
 
                     {/* Item1 */}
 
-                    <div className="relative bg-white w-[400] rounded-3xl shadow-lg overflow-hidden">
+                    <div className="relative bg-white max-w-[400] rounded-3xl shadow-lg overflow-hidden">
                         {/* Header */}
                         <div className="bg-[#232c3b] h-20"></div>
                         <div className="absolute top-0 left-1/2 -translate-x-1/2

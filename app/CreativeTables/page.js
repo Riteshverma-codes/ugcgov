@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function CreativeTables() {
     return (
-        <div className="bg-gray-200 py-20">
-            <div className="max-w-7xl mx-auto flex justify-center gap-10">
-                <div className="relative bg-white w-[400] rounded-3xl shadow-lg overflow-hidden border-orange-500 border-b-7 border-r-7">
+        <div className="bg-gray-200 py-20 px-5">
+            <div className="max-w-7xl flex flex-wrap items-center justify-center mx-auto gap-10">
+                <div className="relative bg-white w-[400] h-[300] rounded-3xl shadow-lg overflow-hidden border-orange-500 border-b-7 border-r-7">
 
 
                     {/* Header */}
@@ -48,7 +48,7 @@ export default function CreativeTables() {
 
                     </div>
                 </div>
-                <div className="relative bg-white w-[400] rounded-3xl shadow-lg overflow-hidden border-orange-500 border-b-7 border-r-7">
+                <div className="relative bg-white w-[400] h-[300] rounded-3xl shadow-lg overflow-hidden border-orange-500 border-b-7 border-r-7">
 
 
                     {/* Header */}
@@ -83,7 +83,7 @@ export default function CreativeTables() {
                 </div>
 
 
-                <div className="relative bg-white w-[400] rounded-3xl shadow-lg overflow-hidden border-orange-500 border-b-7 border-r-7">
+                <div className="relative bg-white w-[400] h-[300] rounded-3xl shadow-lg overflow-hidden border-orange-500 border-b-7 border-r-7">
                     {/* Header */}
                     <div className="px-6 pt-6">
                         <h3 className="text-lg font-bold text-gray-800">
