@@ -84,21 +84,20 @@ export default function Header() {
     return (
         <>
             {/* Top Logos */}
-            <div className="flex items-center justify-around py-2 px-5">
-                <Image src={ugc_logo} width={364} height={80} alt="UGC Logo" />
-
-                <div className="flex items-center gap-4">
-                    <Image src={G20_logo} width={158} height={81} alt="G20 Logo" />
-                    <Image src={MHRD_logo} width={46} height={77} alt="MHRD Logo" />
+            <div className='flex items-center justify-around py-2 px-5 '>
+                <div> <Image src={ugc_logo} width={364} height={80} alt='UGC Logo'></Image> </div>
+                <div className='flex items-center'>
+                    <div> <Image src={G20_logo} width={158} height={81} alt='G20 Logo'></Image></div>
+                    <div> <Image src={MHRD_logo} width={46} height={77} alt='MHRD Logo'></Image> </div>
                 </div>
             </div>
 
             {/* Navigation */}
             <div className="bg-[#ff6c3a] px-5">
-                <ul className="flex justify-center gap-6 text-white font-bold text-lg">
+                <ul className="flex flex-wrap items-center justify-center gap-2 md:gap-6 text-white font-bold text-lg">
 
                     {navList.map((item, i) => (
-                        <li key={i} className="relative group py-4">
+                        <li key={i} className="relative group py-2">
 
                             {!item.megaMenu ? (
                                 <a href={item.path}>{item.label}</a>
