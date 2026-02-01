@@ -12,18 +12,18 @@ export default function PartnerSection() {
             <div className='max-w-310 mx-auto rounded-4xl px-5'>
                 <div className='flex flex-center flex-col'>
                     <h1 className='text-4xl text-center mt-10 font-bold text-[#ff6c3a]'>Star Performer<span className='text-[#3f495a]'> of the Month</span></h1>
-                    <div className='flex flex-wrap items-center justify-center mt-10 gap-10'>
+                    <div className='flex flex-wrap items-center justify-center mt-10 gap-5 md:gap-10 lg:gap-30'>
 
-                        <div className='flex flex-col items-center rounded-xl py-10 px-3 justify-center text-center w-60 h-50'>
+                        <div className=''>
                             <Image src={Sunita} width={154} height={165} alt='Content1' className='rounded-tl-3xl rounded-br-3xl shadow-xl hover:shadow-xl/30 transition-shadow duration-300'></Image>
                         </div>
-                        <div className='flex flex-col items-center rounded-xl py-10 px-3 justify-center text-center w-60 h-50'>
+                        <div className=''>
                             <Image src={Umesh} width={154} height={165} alt='Content1' className='rounded-tl-3xl rounded-br-3xl shadow-xl hover:shadow-xl/30 transition-shadow duration-300'></Image>
                         </div>
-                        <div className='flex flex-col items-center rounded-xl py-10 px-3 justify-center text-center w-60 h-50'>
+                        <div className=''>
                             <Image src={Sridhar} width={154} height={165} alt='Content1' className='rounded-tl-3xl rounded-br-3xl shadow-xl hover:shadow-xl/30 transition-shadow duration-300'></Image>
                         </div>
-                        <div className='flex flex-col items-center rounded-xl py-10 px-3 justify-center text-center w-60 h-50'>
+                        <div className=''>
                             <Image src={Raj} width={154} height={165} alt='Content1' className='rounded-tl-3xl rounded-br-3xl shadow-xl hover:shadow-xl/30 transition-shadow duration-300'></Image>
                         </div>
                     </div>

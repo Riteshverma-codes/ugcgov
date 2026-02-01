@@ -1,102 +1,123 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-import ugc_logo from "../../public/ugc_logo.png"
-import G20_logo from "../../public/G20_India_Logo.png"
-import MHRD_logo from "../../public/MHRD_logo.png"
-
-const navList = [
-    { label: "Home", path: "/" },
-    { label: "About Us", path: "/about" },
-
-    {
-        label: "Organization",
-        dropdown: [
-            { label: "Structure", path: "/organization/structure" },
-            { label: "Members", path: "/organization/members" },
-        ],
-    },
-
-    {
-        label: "Key Initiatives",
-        dropdown: [
-            { label: "Initiative 1", path: "/initiatives/1" },
-            { label: "Initiative 2", path: "/initiatives/2" },
-        ],
-    },
-
-    { label: "Guidelines", path: "/guidelines" },
-    { label: "Regulations", path: "/regulations" },
-    { label: "HEIs", path: "/heis" },
-    { label: "FHEI List", path: "/fhei-list" },
-    { label: "e-Publications", path: "/e-publications" },
-];
-
+import Image from "next/image";
+import ugc_logo from "../../public/ugc_logo.png";
+import G20_logo from "../../public/G20_India_Logo.png";
+import MHRD_logo from "../../public/MHRD_logo.png";
+import MegaMenu from "../MegaMenu/page";
 
 export default function Header() {
+    const navList = [
+        { label: "Home", path: "/" },
+        { label: "About Us", path: "/about" },
+
+        {
+            label: "Organization",
+            megaMenu: {
+                columns: [
+                    {
+                        title: "Commission",
+                        links: [
+                            "Commission Members",
+                            "Commission Decisions",
+                        ],
+                    },
+                    {
+                        title: "Administration",
+                        links: [
+                            "Chairman",
+                            "Vice Chairman",
+                            "Secretary",
+                            "Financial Advisor",
+                            "Additional Secretaries",
+                        ],
+                    },
+                    {
+                        title: "",
+                        links: [
+                            "Joint Secretaries",
+                            "Deputy Secretaries",
+                            "Education Officers",
+                            "Under Secretaries",
+                        ],
+                    },
+                ],
+            },
+        },
+
+        {
+            label: "HEIs",
+            megaMenu: {
+                columns: [
+                    {
+                        title: "Universities",
+                        links: [
+                            "Central Universities",
+                            " State Universities",
+                            " Deemed to be Universities",
+                            " State Private Universities",
+                            " Fake Universities"
+                        ],
+                    },
+                    {
+                        title: "Colleges",
+                        links: [
+                            " Colleges (12(B)/2(f))",
+                            " Autonomous Colleges"
+                        ],
+                    },
+                    {
+                        title: "Institution",
+                        links: [
+                            "Institutions of National Importance",
+                            "Institutions of Eminence"
+                        ],
+                    },
+                ],
+            },
+        },
+        { label: "Key Initiatives", path: "/initiatives" },
+        { label: "Guidelines", path: "/guidelines" },
+        { label: "Regulations", path: "/regulations" },
+        { label: "FHEI List", path: "/fhei-list" },
+        { label: "e-Publications", path: "/publications" },
+    ];
 
     return (
-        <div>
-            <div className='flex items-center justify-around py-2 px-5 '>
-                <div>
-                    <Image src={ugc_logo} width={364} height={80} alt='UGC Logo'></Image>
-                </div>
-                <div className='flex items-center'>
-                    <div>
-                        <Image src={G20_logo} width={158} height={81} alt='G20 Logo'></Image>
-                    </div>
-                    <div>
-                        <Image src={MHRD_logo} width={46} height={77} alt='MHRD Logo'></Image>
-                    </div>
+        <>
+            {/* Top Logos */}
+            <div className="flex items-center justify-around py-2 px-5">
+                <Image src={ugc_logo} width={364} height={80} alt="UGC Logo" />
+
+                <div className="flex items-center gap-4">
+                    <Image src={G20_logo} width={158} height={81} alt="G20 Logo" />
+                    <Image src={MHRD_logo} width={46} height={77} alt="MHRD Logo" />
                 </div>
             </div>
-            <div className="bg-[#ff6c3a] py-4 px-5">
-                <ul className="flex flex-wrap items-center justify-center gap-6 text-white font-bold text-lg">
 
-                    {navList.map((item, index) => (
-                        <li key={index} className="relative group">
+            {/* Navigation */}
+            <div className="bg-[#ff6c3a] px-5">
+                <ul className="flex justify-center gap-6 text-white font-bold text-lg">
 
-                            {/* Normal Link */}
-                            {!item.dropdown && (
-                                <Link
-                                    href={item.path}
-                                    className="hover:bg-"
-                                >
-                                    {item.label}
-                                </Link>
-                            )}
+                    {navList.map((item, i) => (
+                        <li key={i} className="relative group py-4">
 
-                            {/* Dropdown */}
-                            {item.dropdown && (
+                            {!item.megaMenu ? (
+                                <a href={item.path}>{item.label}</a>
+                            ) : (
                                 <>
-                                    <span className="flex items-center justify-center gap-1 cursor-pointer">
+                                    <span className="flex items-center gap-1 cursor-pointer">
                                         {item.label}
-
                                         <svg
-                                            className="w-4 h-4"
+                                            className="w-4 h-4 transition-transform"
                                             fill="none"
                                             stroke="currentColor"
-                                            strokeWidth="4"
+                                            strokeWidth="5"
                                             viewBox="0 0 24 24"
                                         >
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                                            <path d="M19 9l-7 7-7-7" />
                                         </svg>
                                     </span>
 
-                                    <ul className="absolute left-0 top-full mt-3 hidden group-hover:block
-                                         bg-white text-black rounded-md shadow-lg min-w-[200] z-50">
-
-                                        {item.dropdown.map((subItem, i) => (
-                                            <li key={i}>
-                                                <Link
-                                                    href={subItem.path}
-                                                    className="block px-4 py-2 hover:bg-gray-100"
-                                                >
-                                                    {subItem.label}
-                                                </Link>
-                                            </li>
-                                        ))}
-                                    </ul>
+                                    <MegaMenu data={item.megaMenu} />
                                 </>
                             )}
 
@@ -105,7 +126,6 @@ export default function Header() {
 
                 </ul>
             </div>
-
-        </div>
-    )
+        </>
+    );
 }
