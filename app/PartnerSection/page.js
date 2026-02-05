@@ -4,7 +4,6 @@ import Sunita from '../../public/SUNITA.jpg';
 import Umesh from '../../public/Umesh.jpg';
 import Sridhar from '../../public/Sridhar.jpg';
 import Raj from '../../public/Raj.jpg';
-import Marquee from "react-fast-marquee";
 
 export default function PartnerSection() {
     return (

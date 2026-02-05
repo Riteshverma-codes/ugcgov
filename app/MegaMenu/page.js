@@ -1,4 +1,6 @@
+"use client";
 const MegaMenu = ({ data }) => {
+    const columns = data?.columns ?? [];
     return (
         <div className=" absolute left-1/2 top-full -translate-x-[40%]
       hidden group-hover:block bg-white text-gray-800
